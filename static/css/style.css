@@ -1,0 +1,93 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+h1, h2 {
+  color: #222;
+}
+footer {
+  background: #111;
+}
+.course-img {
+    height: 220px;          /* same height for all images */
+    object-fit: cover;      /* keeps image centered and cropped properly */
+    border-radius: 10px 10px 0 0;  /* rounded top edges (optional) */
+}
+/* Contact Page Hero Image */
+.contact-header img {
+    max-height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-header img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form Card */
+.contact-form-card {
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Input fields and textarea */
+.contact-form-card input,
+.contact-form-card textarea {
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05) inset;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-form-card input:focus,
+.contact-form-card textarea:focus {
+    box-shadow: 0 5px 15px rgba(0,123,255,0.3) inset;
+    outline: none;
+}
+
+/* Submit Button */
+.contact-form-card button {
+    border-radius: 50px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Contact Info Cards */
+.contact-info .card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+
+/* Icons inside Contact Info */
+.contact-info i {
+    color: #2575fc;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-info .card:hover i {
+    color: #6a11cb;
+    transform: scale(1.2);
+}
+
+/* Section spacing */
+.contact-header,
+.contact-form-section,
+.contact-info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
