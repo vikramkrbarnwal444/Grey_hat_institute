@@ -1,1 +1,0 @@
-# Grey_hat_institute
