@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Ethical Hacking Course - Grey Hat Institute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .progress-bar {
+            background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+        }
+        
+        .module-icon {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- NAVIGATION BAR -->
+    <nav class="bg-slate-800 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class="text-emerald-400">
+                        <defs>
+                            <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.2"/>
+                                <stop offset="100%" style="stop-color:#059669;stop-opacity:0.4"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M20 3 L30 7 L30 18 C30 25 25 30 20 34 C15 30 10 25 10 18 L10 7 Z" 
+                              fill="url(#shieldGradient)" stroke="currentColor" stroke-width="1.5"/>
+                        <ellipse cx="20" cy="14" rx="7" ry="1.5" fill="currentColor" opacity="0.9"/>
+                        <path d="M15 14 Q15 11 20 11 Q25 11 25 14 L23 12.5 Q20 9 20 9 Q20 9 17 12.5 Z" 
+                              fill="currentColor" opacity="0.8"/>
+                        <path d="M20 15 L16 17 L16 22 Q16 24 18 24 L20 24 Z" 
+                              fill="currentColor" opacity="0.6"/>
+                        <path d="M20 15 L24 17 L24 22 Q24 24 22 24 L20 24 Z" 
+                              fill="currentColor" opacity="0.9"/>
+                        <circle cx="17.5" cy="19" r="0.8" fill="currentColor"/>
+                        <circle cx="22.5" cy="19" r="0.8" fill="currentColor"/>
+                        <polygon points="20,20.5 19,21.5 21,21.5" fill="currentColor" opacity="0.7"/>
+                    </svg>
+                    <span class="text-white text-xl font-bold">
+                        GREY <span class="text-emerald-400">HAT</span> INSTITUTE
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#overview" class="text-gray-300 hover:text-emerald-400 transition-colors">Overview</a>
+                    <a href="#syllabus" class="text-gray-300 hover:text-emerald-400 transition-colors">Syllabus</a>
+                    <a href="#instructor" class="text-gray-300 hover:text-emerald-400 transition-colors">Instructor</a>
+                    <a href="#enroll" class="text-gray-300 hover:text-emerald-400 transition-colors">Enroll</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="overview" class="hero-gradient text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex flex-wrap items-center gap-2 mb-4">
+                        <span class="bg-emerald-500 text-white px-3 py-1 rounded-full text-sm font-semibold">🤖 AI-POWERED</span>
+                        <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">6 WEEKS</span>
+                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold pulse-animation">🔴 LIVE CLASSES</span>
+                        <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">📅 STARTS NOV 2</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                        AI-Powered <span class="text-emerald-400">Ethical Hacking</span> Course
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-6">
+                        Master ethical hacking from scratch with AI-guided labs, real-world hands-on projects, and step-by-step interactive lessons. Build practical cybersecurity skills safely and confidently, even if you're a complete beginner.
+                    </p>
+                    <div class="bg-red-500 bg-opacity-20 border border-red-400 rounded-lg p-4 mb-8">
+                        <h3 class="text-lg font-semibold text-red-300 mb-2">🔴 Complete Live Classes Schedule</h3>
+                        <div class="grid md:grid-cols-3 gap-4 text-sm">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-red-300">📅</span>
+                                <span>Start Date: 2nd November 2024</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-red-300">⏰</span>
+                                <span>Time: 8:00 PM IST</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-red-300">📚</span>
+                                <span>3 Days per Week</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="scrollToEnroll()" class="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                            Enroll Now - ₹699
+                        </button>
+                        <button class="border-2 border-emerald-400 text-emerald-400 hover:bg-emerald-400 hover:text-slate-800 px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                            Download Syllabus
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold mb-6">Course Highlights</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <span>Complete Live Classes - 3 days/week at 8 PM</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <span>AI-guided learning with personalized feedback</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <span>Hands-on labs with real-world scenarios</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <span>Complete beginner to advanced level</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <span>Industry-recognized certification</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <span>Career guidance and job placement support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COURSE STATS -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-5 gap-6 text-center">
+                <div class="card-hover p-6">
+                    <div class="text-4xl font-bold text-red-600 mb-2">🔴</div>
+                    <div class="text-gray-600">Live Classes</div>
+                    <div class="text-sm text-gray-500 mt-1">8 PM IST</div>
+                </div>
+                <div class="card-hover p-6">
+                    <div class="text-4xl font-bold text-emerald-600 mb-2">6</div>
+                    <div class="text-gray-600">Weeks Duration</div>
+                    <div class="text-sm text-gray-500 mt-1">3 Days/Week</div>
+                </div>
+                <div class="card-hover p-6">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">25+</div>
+                    <div class="text-gray-600">Hands-on Labs</div>
+                </div>
+                <div class="card-hover p-6">
+                    <div class="text-4xl font-bold text-purple-600 mb-2">24/7</div>
+                    <div class="text-gray-600">AI Support</div>
+                </div>
+                <div class="card-hover p-6">
+                    <div class="text-4xl font-bold text-orange-600 mb-2">Nov 2</div>
+                    <div class="text-gray-600">Start Date</div>
+                    <div class="text-sm text-gray-500 mt-1">2024</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILED SYLLABUS -->
+    <section id="syllabus" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Complete Course Syllabus</h2>
+                <p class="text-xl text-gray-600">Comprehensive curriculum designed for practical mastery</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Module 1: Introduction to Ethical Hacking -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module1')">
+                    <div class="bg-gradient-to-r from-emerald-500 to-emerald-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 module-icon rounded-full flex items-center justify-center text-white font-bold">1</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Introduction to Ethical Hacking</h3>
+                                    <p class="text-gray-600">Foundation concepts and first class overview</p>
+                                </div>
+                            </div>
+                            <svg id="arrow1" class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div id="module1" class="ml-16 mt-4 hidden">
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>What is Ethical Hacking and Why it Matters</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Legal and Ethical Considerations</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Career Opportunities in Cybersecurity</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Course Overview and Learning Path</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 2: Networking for Hackers -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module2')">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">2</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Networking for Hackers</h3>
+                                    <p class="text-gray-600">Core networking concepts and packet analysis</p>
+                                </div>
+                            </div>
+                            <svg id="arrow2" class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div id="module2" class="ml-16 mt-4 hidden">
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>OSI & TCP/IP models and how data flows</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>TCP/UDP and common services (HTTP, DNS, SSH)</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Capture and inspect packets with Wireshark</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>IP addressing, MAC address fundamentals</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Network devices: routers, switches, firewalls</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Firewalls, ACLs, VLANs, and network segmentation</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 3: Lab Setup - VMware & VM Roles -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module3')">
+                    <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">3</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Lab Setup - VMware & VM Roles</h3>
+                                    <p class="text-gray-600">Setting up your complete hacking lab environment</p>
+                                </div>
+                            </div>
+                            <svg id="arrow3" class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div id="module3" class="ml-16 mt-4 hidden">
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>VMware setup - host and isolate lab VMs</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Kali Linux - attacker workstation for pentesting</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Windows Server 2022 - realistic target with server services</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Metasploitable2 - intentionally vulnerable practice target</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Snapshots & troubleshooting - restore lab states</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 4: Essential Kali Linux -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module4')">
+                    <div class="bg-gradient-to-r from-red-500 to-red-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">4</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Essential Kali Linux</h3>
+                                    <p class="text-gray-600">Master the hacker's operating system</p>
+                                </div>
+                            </div>
+                            <svg id="arrow4" class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div id="module4" class="ml-16 mt-4 hidden">
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Basic navigation commands - move between files and folders</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>User & sudo setup - create users and give sudo permissions</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>File permissions - manage access with chmod & chown</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Package management - install and update tools with apt</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Network commands - check and troubleshoot connections</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 5: Advanced IP Addressing -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module5')">
+                    <div class="bg-gradient-to-r from-yellow-500 to-yellow-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center text-white font-bold">5</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Advanced IP Addressing</h3>
+                                    <p class="text-gray-600">Deep dive into network addressing and subnetting</p>
+                                </div>
+                            </div>
+                            <svg id="arrow5" class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div id="module5" class="ml-16 mt-4 hidden">
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Understanding public vs private IPs and their uses</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Subnetting in detail: dividing networks and calculating ranges</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Gateway, broadcast, and network addresses explained</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>NAT (Network Address Translation) and network connections</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>IP configuration in lab VMs and troubleshooting</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 6: Information Gathering & Reconnaissance -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module6')">
+                    <div class="bg-gradient-to-r from-indigo-500 to-indigo-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold">6</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Information Gathering & Reconnaissance</h3>
+                                    <p class="text-gray-600">OSINT and intelligence gathering techniques</p>
+                                </div>
+                            </div>
+                            <svg id="arrow6" class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div id="module6" class="ml-16 mt-4 hidden">
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Active & Passive Techniques: collect public data vs probe targets</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>OSINT Tools: Shodan, theHarvester, Recon-ng for discovery</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>WHOIS & DNS: domain owner, DNS records, subdomains</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Email Reconnaissance: find emails, verify headers</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Organize Findings: save outputs and build asset lists</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 7: Network Scanning -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module7')">
+                    <div class="bg-gradient-to-r from-pink-500 to-pink-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center text-white font-bold">7</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Network Scanning</h3>
+                                    <p class="text-gray-600">Discover hosts, ports, and running services</p>
+                                </div>
+                            </div>
+                            <svg id="arrow7" class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div id="module7" class="ml-16 mt-4 hidden">
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Purpose: discover hosts, open ports, running services (ethical, lab-only)</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Port scanning with Nmap: basic scans, service/version detection</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Banner grabbing & service enumeration with netcat, Nmap</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>UDP vs TCP scanning & scan timing optimization</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Interpreting results and NSE scripts</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 8: Vulnerability Analysis + Malware Threats -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module8')">
+                    <div class="bg-gradient-to-r from-orange-500 to-orange-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold">8</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Vulnerability Analysis + Malware Threats</h3>
+                                    <p class="text-gray-600">Assess vulnerabilities and create/analyze malware</p>
+                                </div>
+                            </div>
+                            <svg id="arrow8" class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div id="module8" class="ml-16 mt-4 hidden">
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Vulnerability assessment: scan, identify CVEs, assess impact</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Prioritization: CVSS, asset value, and exploitability ranking</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Safe malware analysis: static & dynamic analysis in sandbox</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Create malware and exploit Windows systems</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Mitigation & reporting: patching, hardening, remediation</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 9: System Hacking -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module9')">
+                    <div class="bg-gradient-to-r from-teal-500 to-teal-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full flex items-center justify-center text-white font-bold">9</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">System Hacking</h3>
+                                    <p class="text-gray-600">Advanced system penetration techniques</p>
+                                </div>
+                            </div>
+                            <svg id="arrow9" class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div id="module9" class="ml-16 mt-4 hidden">
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>System hacking techniques and methodologies</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Privilege escalation basics and advanced techniques</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Post-exploitation analysis and persistence</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Authentication attacks & defenses</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Remediation & system hardening</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 10: Social Engineering -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module10')">
+                    <div class="bg-gradient-to-r from-cyan-500 to-cyan-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold">10</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Social Engineering</h3>
+                                    <p class="text-gray-600">Human psychology and social media exploitation</p>
+                                </div>
+                            </div>
+                            <svg id="arrow10" class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div id="module10" class="ml-16 mt-4 hidden">
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Introduction to Social Engineering fundamentals</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Location Tracking techniques and tools</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Social Media hacking and OSINT gathering</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Email & Phishing Awareness and detection</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Mitigation & Best Practices for defense</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 11: Advanced Attacks & Web Security -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module11')">
+                    <div class="bg-gradient-to-r from-rose-500 to-rose-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-rose-500 to-rose-600 rounded-full flex items-center justify-center text-white font-bold">11</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Advanced Attacks & Web Security</h3>
+                                    <p class="text-gray-600">DDoS, sniffing, and web application vulnerabilities</p>
+                                </div>
+                            </div>
+                            <svg id="arrow11" class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div id="module11" class="ml-16 mt-4 hidden">
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>DDoS Attack techniques and mitigation strategies</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Sniffing & traffic analysis using Wireshark defensively</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Web vulnerabilities (OWASP): SQLi, XSS, broken auth</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Insecure file upload and directory traversal</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Web application security testing and remediation</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 12: Dark Web & Deep Web Access -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module12')">
+                    <div class="bg-gradient-to-r from-gray-700 to-gray-800 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-800 rounded-full flex items-center justify-center text-white font-bold">12</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Dark Web & Deep Web Access</h3>
+                                    <p class="text-gray-600">Anonymous browsing and complete internet anonymity</p>
+                                </div>
+                            </div>
+                            <svg id="arrow12" class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div id="module12" class="ml-16 mt-4 hidden">
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Understanding Dark Web vs Deep Web differences</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Tor Browser and Anonymous Access techniques</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>VPN setup & use-cases for enhanced privacy</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Proxy types & setup overview for anonymity</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Complete anonymity techniques on the internet</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTRUCTOR SECTION -->
+    <section id="instructor" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Meet Your Instructor</h2>
+                <p class="text-xl text-gray-600">Learn from industry experts with real-world experience</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="w-48 h-48 bg-gradient-to-r from-emerald-400 to-blue-500 rounded-full mx-auto lg:mx-0 mb-6 flex items-center justify-center">
+                        <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Expert Cybersecurity Instructor</h3>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Our lead instructor brings over 10 years of experience in cybersecurity, ethical hacking, and penetration testing. With certifications from top industry bodies and hands-on experience in protecting major corporations, you'll learn from someone who has been in the trenches.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Certified Ethical Hacker (CEH)</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>10+ Years Industry Experience</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>5000+ Students Trained Successfully</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Real-world Penetration Testing Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENROLLMENT SECTION -->
+    <section id="enroll" class="py-20 bg-slate-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Start Your Ethical Hacking Journey?</h2>
+            <p class="text-xl text-gray-300 mb-8">
+                Join hundreds of students who have successfully launched their cybersecurity careers with our comprehensive course.
+            </p>
+            
+            <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 mb-8">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Course Investment</h3>
+                        <div class="text-5xl font-bold text-emerald-400 mb-2">₹699</div>
+                        <p class="text-gray-300 mb-2">Complete 6-week Live program</p>
+                        <div class="bg-red-500 bg-opacity-20 border border-red-400 rounded-lg p-3 mb-4">
+                            <p class="text-red-300 text-sm font-semibold">🔴 Live Classes: Nov 2 | 8 PM IST | 3 Days/Week</p>
+                        </div>
+                        <div class="space-y-2 text-left">
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Lifetime access to course materials</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>24/7 AI-powered support</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Industry-recognized certificate</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Career guidance and job support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form id="enrollForm" class="space-y-4" onsubmit="handleEnrollment(event)">
+                            <div>
+                                <input name="name" type="text" placeholder="Full Name" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:ring-2 focus:ring-emerald-400 focus:border-transparent text-white" required>
+                            </div>
+                            <div>
+                                <input name="email" type="email" placeholder="Email Address" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:ring-2 focus:ring-emerald-400 focus:border-transparent text-white" required>
+                            </div>
+                            <div>
+                                <input name="phone" type="tel" placeholder="Phone Number" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:ring-2 focus:ring-emerald-400 focus:border-transparent text-white" required>
+                            </div>
+                            <div>
+                                <select class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:ring-2 focus:ring-emerald-400 focus:border-transparent text-white" required>
+                                    <option value="">Experience Level</option>
+                                    <option value="beginner">Complete Beginner</option>
+                                    <option value="some">Some IT Knowledge</option>
+                                    <option value="intermediate">Intermediate</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-3 rounded-lg font-semibold transition-colors">
+                                Enroll Now - ₹699
+                            </button>
+                        </form>
+                        <p class="text-sm text-gray-400 mt-4">
+                            🔒 Secure enrollment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <svg width="32" height="32" viewBox="0 0 40 40" class="text-emerald-400">
+                        <defs>
+                            <linearGradient id="footerShieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.2"/>
+                                <stop offset="100%" style="stop-color:#059669;stop-opacity:0.4"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M20 3 L30 7 L30 18 C30 25 25 30 20 34 C15 30 10 25 10 18 L10 7 Z" 
+                              fill="url(#footerShieldGradient)" stroke="currentColor" stroke-width="1.5"/>
+                        <ellipse cx="20" cy="14" rx="7" ry="1.5" fill="currentColor" opacity="0.9"/>
+                        <path d="M15 14 Q15 11 20 11 Q25 11 25 14 L23 12.5 Q20 9 20 9 Q20 9 17 12.5 Z" 
+                              fill="currentColor" opacity="0.8"/>
+                        <path d="M20 15 L16 17 L16 22 Q16 24 18 24 L20 24 Z" 
+                              fill="currentColor" opacity="0.6"/>
+                        <path d="M20 15 L24 17 L24 22 Q24 24 22 24 L20 24 Z" 
+                              fill="currentColor" opacity="0.9"/>
+                        <circle cx="17.5" cy="19" r="0.8" fill="currentColor"/>
+                        <circle cx="22.5" cy="19" r="0.8" fill="currentColor"/>
+                        <polygon points="20,20.5 19,21.5 21,21.5" fill="currentColor" opacity="0.7"/>
+                    </svg>
+                    <span class="text-lg font-bold">
+                        GREY <span class="text-emerald-400">HAT</span> INSTITUTE
+                    </span>
+                </div>
+                <p class="text-gray-400 mb-4">Empowering the next generation of cybersecurity professionals</p>
+                <p class="text-gray-500">&copy; 2025 Grey Hat Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll to enrollment section
+        function scrollToEnroll() {
+            document.getElementById('enroll').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Toggle module content visibility
+        function toggleModule(moduleId) {
+            const module = document.getElementById(moduleId);
+            const arrow = document.getElementById('arrow' + moduleId.slice(-1));
+            
+            if (module.classList.contains('hidden')) {
+                module.classList.remove('hidden');
+                arrow.classList.add('rotate-180');
+            } else {
+                module.classList.add('hidden');
+                arrow.classList.remove('rotate-180');
+            }
+        }
+
+        // Handle enrollment form submission
+        function handleEnrollment(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            // In a real application, you would process the enrollment
+            alert('Thank you for your interest! We will contact you shortly with enrollment details and payment instructions.');
+            form.reset();
+        }
+
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-opacity-95');
+            } else {
+                nav.classList.remove('bg-opacity-95');
+            }
+        });
+    </script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<script>
+function handleEnrollment(event) {
+  event.preventDefault();
+
+  const form = document.getElementById("enrollForm");
+  const formData = new FormData(form);
+
+  const name = formData.get("Full Name") || formData.get("fullName") || formData.get("name");
+  const email = formData.get("email");
+  const phone = formData.get("phone");
+
+  const scriptURL = "https://script.google.com/macros/s/AKfycbwd9HC3KHDdZEzOjcejjHs5WkTRcXKxKP-XX4cEsT6sehJrii8BWUi13q_R0ZAp5tKA/exec";
+
+  // Step 1: Save data to Google Sheet
+  fetch(scriptURL, {
+    method: "POST",
+    body: formData
+  })
+  .then(() => {
+    // Step 2: Start payment
+    startPayment(name, email, phone);
+  })
+  .catch(error => {
+    alert("Error: Unable to submit data.");
+    console.error(error);
+  });
+}
+
+function startPayment(name, email, phone) {
+  var options = {
+    key: "rzp_test_RaWuTfmiSpAzQ4",
+    amount: 69900, // ₹699
+    currency: "INR",
+    name: "CyberHack Academy",
+    description: "Ethical Hacking Course Enrollment",
+
+    handler: function (response) {
+      // ✅ 1️⃣ Try to open WhatsApp automatically
+      window.open("https://chat.whatsapp.com/KYV3avhrc3VC48y96C69vf", "_blank");
+
+      // ✅ 2️⃣ Show confirmation popup with backup support info
+      showPaymentSuccessPopup("https://chat.whatsapp.com/KYV3avhrc3VC48y96C69vf");
+    },
+
+    prefill: {
+      name: name,
+      email: email,
+      contact: phone,
+    },
+
+    theme: {
+      color: "#10b981"
+    }
+  };
+
+  var rzp = new Razorpay(options);
+  rzp.open();
+}
+</script>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919334494170" target="_blank" 
+   class="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg flex items-center space-x-2 hover:bg-green-600 transition-all z-50">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+        <path d="M20.52 3.48A11.8 11.8 0 0012 0a11.8 11.8 0 00-8.48 3.48A11.8 11.8 0 000 12a11.75 11.75 0 001.7 6.1L0 24l6.2-1.63A11.88 11.88 0 0012 24a11.8 11.8 0 008.48-3.48A11.8 11.8 0 0024 12a11.8 11.8 0 00-3.48-8.52zM12 22a10 10 0 01-5.08-1.4l-.36-.22-3.68.97.98-3.59-.24-.37A10 10 0 1122 12a10 10 0 01-10 10zm5.38-6.54c-.29-.15-1.7-.84-1.96-.94s-.46-.15-.65.15-.75.94-.92 1.13-.34.21-.63.07a8.14 8.14 0 01-2.4-1.48 9.1 9.1 0 01-1.68-2.1c-.17-.29 0-.45.13-.6s.29-.34.44-.51a2 2 0 00.29-.48.56.56 0 000-.53c-.08-.15-.65-1.57-.9-2.16s-.48-.5-.65-.51h-.56a1.1 1.1 0 00-.8.37A3.31 3.31 0 005.9 10.1a5.75 5.75 0 001.2 3.12 13 13 0 005 4.28 16.64 16.64 0 001.65.6 4 4 0 001.84.12 3 3 0 002-.94 2.36 2.36 0 00.51-1.4c-.02-.23-.09-.34-.38-.49z"/>
+    </svg>
+    <span class="font-semibold">Need Help?</span>
+</a>
+<!-- This is happend after payment confirmation. -->
+ <script>
+function showPaymentSuccessPopup(groupLink) {
+  // Remove existing popup if any
+  const old = document.getElementById("payment-popup");
+  if (old) old.remove();
+
+  // Popup container
+  const popup = document.createElement("div");
+  popup.id = "payment-popup";
+  popup.className = `
+    fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50
+  `;
+
+  popup.innerHTML = `
+    <div class="bg-slate-800 text-white rounded-2xl shadow-2xl p-8 max-w-md w-[90%] text-center animate-fadeIn border border-slate-700">
+      <div class="text-4xl mb-3 text-emerald-400">✅</div>
+      <h2 class="text-2xl font-bold mb-3 text-emerald-400">Payment Successful!</h2>
+      <p class="text-gray-300 mb-6 leading-relaxed">
+        Thank you for enrolling in our course.<br>
+        If WhatsApp didn’t open automatically, you can join below 👇
+      </p>
+
+      <a href="${groupLink}" target="_blank"
+        class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-lg">
+        💬 Join WhatsApp Group
+      </a>
+
+      <div class="mt-6 border-t border-slate-700 pt-4 text-gray-400 text-sm">
+        <p>Need help? WhatsApp us at</p>
+        <a href="https://wa.me/919334494170"
+          target="_blank"
+          class="text-emerald-400 font-semibold hover:underline">
+          +91&nbsp;93344&nbsp;94170
+        </a>
+      </div>
+
+      <button
+        onclick="document.getElementById('payment-popup').remove()"
+        class="mt-6 text-gray-400 hover:text-white text-sm underline transition">
+        Close
+      </button>
+    </div>
+  `;
+
+  document.body.appendChild(popup);
+}
+</script>
+
+<style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out;
+}
+</style>
+
+</body>
+</html>
