@@ -2,7 +2,7 @@
 //   PAYMENT.JS (FRONTEND)       //
 // ============================= //
 
-const serverBase = "http://localhost:3000"; 
+const serverBase = "https://greyhatinstitute.in"; 
 // 🔒 Change to your domain after deployment
 // const serverBase = "https://greyhatinstitute.com";
 
@@ -104,3 +104,4 @@ contact us on WhatsApp: +91 93344 94170
     alert("Verification error. Try again later.");
   }
 }
+
