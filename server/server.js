@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use(cors({
-  origin: ['https://yourdomain.com'], // 🔒 change to your live domain
+  origin: ['https://greyhatinstitute.in'], // 🔒 change to your live domain
   methods: ['POST'],
   allowedHeaders: ['Content-Type']
 }));
@@ -75,3 +75,4 @@ app.post('/verify-payment', (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+
