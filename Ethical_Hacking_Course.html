@@ -567,7 +567,50 @@
                     </div>
                 </div>
 
-                <!-- Module 9: System Hacking -->
+                <!-- Module 9: WiFi Hacking -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module9')">
+                    <div class="bg-gradient-to-r from-teal-500 to-teal-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full flex items-center justify-center text-white font-bold">9</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Wi-Fi Hacking</h3>
+                                    <p class="text-gray-600">Practical Wi-Fi hacking, common attacks, and how to defend networks</p>
+                                </div>
+                            </div>
+                            <svg id="arrow9" class="w-6 h-6 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div id="module9" class="ml-16 mt-4 hidden">
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Wireless reconnaissance: find nearby networks, SSIDs, and connected devices</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Handshake capture & cracking: record Wi-Fi handshakes and try offline password guesses</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>MITM basics: create fake access points to demonstrate risks (for lab use only)</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>WPA/WPA2/3 essentials: differences, strong passwords, and why WPA3 is safer</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="text-emerald-500">✅</span>
+                                    <span>Remediation & hardening: secure settings, guest networks, and monitoring for intruders</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Module 9: System Hacking -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" onclick="toggleModule('module9')">
                     <div class="bg-gradient-to-r from-teal-500 to-teal-600 h-2"></div>
                     <div class="p-6">
@@ -1095,5 +1138,6 @@ function showPaymentSuccessPopup(groupLink) {
 
 </body>
 </html>
+
 
 
