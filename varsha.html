@@ -146,14 +146,24 @@
    </div><!-- Success Page (Hidden Initially) -->
    <div id="success-page" class="min-h-full flex flex-col items-center justify-center p-6 relative hidden"><!-- Confetti Container -->
     <div id="confetti-container" class="fixed inset-0 pointer-events-none z-50"></div><!-- Success Card -->
-    <div class="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 max-w-lg w-full card-shadow relative z-10"><!-- Celebration Emojis -->
+    <div class="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 max-w-2xl w-full card-shadow relative z-10 max-h-[90vh] overflow-y-auto"><!-- Celebration Emojis -->
      <div class="text-center mb-4"><span class="text-6xl">🎉</span>
      </div>
      <h1 id="success-title" class="font-caveat text-5xl md:text-6xl text-center text-pink-600 mb-6">Yaaay! 🎊</h1><!-- Hearts Row -->
-     <div class="flex justify-center gap-4 text-4xl mb-6"><span class="floating" style="animation-delay: 0s;">💕</span> <span class="floating" style="animation-delay: 0.3s;">💖</span> <span class="floating" style="animation-delay: 0.6s;">💗</span> <span class="floating" style="animation-delay: 0.9s;">💝</span> <span class="floating" style="animation-delay: 1.2s;">💕</span>
+     <div class="flex justify-center gap-4 text-4xl mb-8"><span class="floating" style="animation-delay: 0s;">💕</span> <span class="floating" style="animation-delay: 0.3s;">💖</span> <span class="floating" style="animation-delay: 0.6s;">💗</span> <span class="floating" style="animation-delay: 0.9s;">💝</span> <span class="floating" style="animation-delay: 1.2s;">💕</span>
+     </div><!-- Main Celebration Message -->
+     <div class="bg-gradient-to-r from-pink-100 to-rose-100 rounded-2xl p-6 mb-6">
+      <p id="celebration-message" class="text-gray-700 text-center text-lg leading-relaxed font-medium">Tum mere life ka sabse important part ho! Jo har lamhe mere sath muskurate ho, jo meri khushiyon mein khush hote ho, aur jo meri galtiyon mein bhi saath dete ho - wohi tum ho! 💖<br><br>
+        This Valentine's Day, I don't need flowers ya chocolates. I just need YOU! Teri hasi, teri baatein, teri crazy ideas - sab kuch mere liye special hai. 🌸<br><br>
+        Thank you for being the most amazing friend ever! You make every day feel like a celebration just by being in my life. ✨<br><br>
+        Happy Valentine's Day to my forever best friend! Let's grow old together, telling people we're the most romantic couple they've ever seen! 😂💕</p>
+     </div><!-- Friend Message Box -->
+     <div class="bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl p-6 mb-6">
+      <p id="friend-name-display-success" class="font-caveat text-3xl text-pink-600 text-center mb-3">With Love 💕</p>
+      <p id="success-message-display" class="text-gray-700 text-center text-base leading-relaxed">Forever your bestie! 💫</p>
      </div><!-- Signature -->
-     <p class="font-caveat text-2xl text-center text-pink-500">Happy Valentine's Day! 🌹</p>
-     <p class="text-center text-pink-400 mt-2">- Your Best Friend Forever 💫</p><!-- Restart Button --> <button onclick="restartPage()" class="mt-8 mx-auto block px-8 py-3 bg-pink-100 text-pink-600 font-semibold rounded-full hover:bg-pink-200 transition-colors"> Once More? 🔄 </button>
+     <p class="font-caveat text-2xl text-center text-pink-500 mb-2">Happy Valentine's Day! 🌹</p>
+     <p class="text-center text-pink-400 mb-6">- Your Best Friend Forever 💫</p><!-- Restart Button --> <button onclick="restartPage()" class="mt-4 mx-auto block px-8 py-3 bg-pink-100 text-pink-600 font-semibold rounded-full hover:bg-pink-200 transition-colors"> Once More? 🔄 </button>
     </div>
    </div>
   </div>
@@ -162,7 +172,8 @@
       friend_name: "Bestie",
       main_question: "Will you be my Valentine?",
       success_title: "Yaaay! 🎊",
-      success_message: "Tu meri sabse pyaari dost hai! Valentine's Day pe koi romantic partner na sahi, but tu hai na mere saath! 👯‍♀️ Teri friendship mere liye sabse special hai. Let's celebrate our amazing friendship today! Love you loads! 💖✨"
+      success_message: "Tu meri sabse pyaari dost hai! Valentine's Day pe koi romantic partner na sahi, but tu hai na mere saath! 👯‍♀️ Teri friendship mere liye sabse special hai. Let's celebrate our amazing friendship today! Love you loads! 💖✨",
+      celebration_message: "Tum mere life ka sabse important part ho! Jo har lamhe mere sath muskurate ho, jo meri khushiyon mein khush hote ho, aur jo meri galtiyon mein bhi saath dete ho - wohi tum ho! 💖\n\nThis Valentine's Day, I don't need flowers ya chocolates. I just need YOU! Teri hasi, teri baatein, teri crazy ideas - sab kuch mere liye special hai. 🌸\n\nThank you for being the most amazing friend ever! You make every day feel like a celebration just by being in my life. ✨\n\nHappy Valentine's Day to my forever best friend! Let's grow old together, telling people we're the most romantic couple they've ever seen! 😂💕"
     };
     
     let noBtn = document.getElementById('no-btn');
@@ -303,11 +314,15 @@
       const mainQuestion = config.main_question || defaultConfig.main_question;
       const successTitle = config.success_title || defaultConfig.success_title;
       const successMessage = config.success_message || defaultConfig.success_message;
+      const celebrationMessage = config.celebration_message || defaultConfig.celebration_message;
       
       document.getElementById('main-question').textContent = mainQuestion;
       document.getElementById('success-title').textContent = successTitle;
       document.getElementById('success-message').textContent = successMessage;
       document.getElementById('friend-name-display').textContent = `Dear ${friendName} 💕`;
+      document.getElementById('friend-name-display-success').textContent = `Dear ${friendName} 💕`;
+      document.getElementById('celebration-message').textContent = celebrationMessage;
+      document.getElementById('success-message-display').textContent = successMessage;
     }
     
     function mapToCapabilities(config) {
@@ -324,7 +339,8 @@
         ["friend_name", config.friend_name || defaultConfig.friend_name],
         ["main_question", config.main_question || defaultConfig.main_question],
         ["success_title", config.success_title || defaultConfig.success_title],
-        ["success_message", config.success_message || defaultConfig.success_message]
+        ["success_message", config.success_message || defaultConfig.success_message],
+        ["celebration_message", config.celebration_message || defaultConfig.celebration_message]
       ]);
     }
     
@@ -338,5 +354,5 @@
       });
     }
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cda6a4b6424b2b1',t:'MTc3MTA0OTU2MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cda714c40b2b2b1',t:'MTc3MTA0OTg0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
